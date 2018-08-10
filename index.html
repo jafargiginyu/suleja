@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/*
+      Developer:
+Name:   Jafar Mohammad Musa
+Email:  jafargiginyu@gmail.com, jafar082000@yahoo.com
+Mobile: 08020591596, 08039150071;
+Address: N09 Maigari Mohd Link Giginyu Quarters, Nassarawa L.G.A, Kano State, Nigeria;
+*/
+
+body {
+background-color: rgb(63, 63, 63);
+}
+
+h1 {
+color: rgb(255, 255, 255);
+text-align: center;
+text-transform: uppercase;
+}
+
+h1 span {
+display: inline-block;
+opacity: 1;
+transform: translateX(0);
+animation: enterFromLeft 1.5s ease-out;
+}
+
+h1 span:first-letter {
+color: rgb(255, 0, 0);
+}
+
+@keyframes enterFromLeft {
+  0% {opacity: 0; transform: translateX(-100vw);}
+ 33% {opacity: 1; transform: translateX(-100vw);}
+100% {transform: translateX(0);}
+}
+/*Side link*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*end of sid link*/
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+.navbar{
+  background-color: blue;
+}
+
+.font{
+  font-family: 'Monoton', cursive;
+}
+
+.fon{
+  line-height: 2em;
+  text-align: justify;
+  font-size: 16px;
+}
+
+
+.imagecircle {
+  border-radius: 50%;
+
+}
+
+
+.pic{
+  width: 200px;
+  height: px;
+  border-radius: 50%;
+
+}
+.picbig{
+  position: absolute;
+  width: 0px;
+  transition:width 0.3s linear 0s;
+  z-index: 10px;
+  border-radius: 50%;
+
+}
+.pic:hover + .picbig{
+  width: 400px;
+  height: 400px;
+}
+
+
+.modal{
+background-image: url('logo2.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+.btnn{
+	width: 150px;
+
+}
+
+.btnr{
+	width: 100px;
+}
+
+/* REMOVE THIS, USE YOUR OWN  */
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, Sans-serif;
+  background-color: green;
+}
+.dummy_page {
+  height: 5px;
+  width: 100%;
+  color: #ffffff;
+  background-color: maroon;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 60px 0px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: darkgreen;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+
+
+</style>
+  <title>Suleja Emirate Council</title>
+  <link rel="icon" href="images/emir.jpg">
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta name="google-site-verification" content="0G3osm4L-7FUdUAImIIcNBKeHxoLP1k2ies02UststU" />
+</head>
+<body>
+<h1><span>SULEJA</span> <span>EMIRATE COUNCIL</span></h1>
+<div class="w3-container w3-center w3-animate-zoom">
+<div class="font">
+<nav class="navbar navbar-inverse navbar-static-top" style="background-color: green;">
+  <div class="container-fluid">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span> 
+     </div>
+     </button>
+     <div class="navbar-collapse collapse">
+       <ul class="nav navbar-nav navbar-left">
+       <li><a href="index.html" style="background-color: green;">Home</a></li>
+       <li class="active" >
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: green;">ABOUT<b class="caret"></b>
+        <ul class="dropdown-menu">
+          <li><a href="#">History of Suleja Emirate</a></li>
+          <li><a href="#">Tradional Structure and Districts</a></li>
+          <li><a href="#">Emirate Council with Brief History of Members</a></li>
+          <li><a href="#">Title Holders</a></li>
+        </ul>
+        
+
+        
+        <li class="active"><a href="#" style="background-color: green;">SIGHT & SOUND</a></li>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" size="20">
+      </div>
+      <button type="submit" class="btn btn-default" style="border-radius: 20px; background: green; color: white;">Search</button>
+    </form>
+
+
+  
+
+
+
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#" style="background: green;"><span class="glyphicon glyphicon-user"></span> Mail</a></li>
+      <li class="active"><a href="#" style="background: green;"><span class="glyphicon glyphicon-log-in" ></span>Admin</a></li>
+      
+    </ul>
+     </div>
+     </div>
+     </nav>
+
+<div class="container-fluid">
+
+<div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+<ol class="carousel-indicators">
+<li data-target="#mycarousel" data-slide-to="1">
+<li data-target="#mycarousel" data-slide-to="2">
+<li data-target="#mycarousel" data-slide-to="3">
+<li data-target="#mycarousel" data-slide-to="4">
+</ol>
+
+<div class="carousel-inner">
+<div class="item active">
+<img src="images/b1-compressed.jpg">
+</div>
+
+<div class="item">
+<img src="images/b2-compressed.jpg">
+</div>
+
+
+<div class="item">
+<img src="images/b3-compressed.jpg">
+</div>
+
+<div class="item">
+<img src="images/b4-compressed.jpg">
+</div>
+</div>
+
+<a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+
+<a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+
+</div>
+
+<div class="container" style="margin-top:40px;">
+<div class="row">
+<div class="col-md-3">
+
+<img class="pic" src="images/emir.jpg"  class="img-circle" alt="Cinque Terre">
+<img class="picbig w3-animate-fading" src="images/emir.jpg"  class="img-circle" alt="Cinque Terre"><p><strong>His Highness</strong><br>
+
+<button style="width: 200px; margin-top: 50px;" class="w3-button w3-red" onclick="document.getElementById('id01').style.display='block'">List of rulers</button> 
+<div id="id01" class="w3-panel w3-green w3-display-container" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-red w3-display-topright">x</span>
+  <p>
+  (i) 
+  </p>
+  
+  <p>
+  (ii) 
+  </p>
+
+  <p>
+  (iii) 
+  </p>
+
+  <p>
+  (iv) 
+  </p>
+
+  <p>
+  (v) 
+  </p>
+
+  <p>
+  (vi) 
+  </p>
+  
+  
+</div>
+  <p><button class="w3-button w3-red"><a href="#">Population</a></button></p>
+
+</ol>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <h2 style="color: green">SULEJA EMIRATE COUNCIL</h2>
+  <a href="#">Economy and Resources</a>
+  <a href="#">Toursm</a>
+  <a href="#">Agriculture</a>
+</div>
+
+
+<p>Click on the Link below to open more:</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click Me?</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</div>
+
+<div class="col-md-6">
+  <div class="fon w3-container w3-center w3-animate-bottom">
+<p style="text-align: justify;"><strong style="color: green">History of Suleja</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+ <a href="about.html">Read More:</a>
+
+  </p>
+  <p style="margin-left: -60px;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.1367834967905!2d7.176757114335122!3d9.175291993419469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd427f5734735%3A0x1c212b9e0df3079a!2sEmir&#39;s+Palace%2C+Kwamba!5e1!3m2!1sen!2sng!4v1533891033375" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+ 
+
+    
+
+</p>
+</div>
+</div>
+<div class="col-md-3">
+  <div class="font">
+  <img  src="images/1.jpg" style="border: 5px solid green">
+  <img  src="images/2.jpg" style="border: 5px solid green; margin-top: 10px;">
+
+
+
+<p style="margin-top: 10px;"><iframe width="330" height="150" src="https://www.youtube.com/embed/go7_lk0w5AQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></p></p>
+
+   
+<!-- BEGIN JIVOSITE CODE {literal} -->
+
+<!-- {/literal} END JIVOSITE CODE -->
+</div>
+</div>
+</div>
+</strong>
+</p>
+</div>
+
+
+
+
+ 
+<div class="dummy_page">
+ <p> <img src="images/emir.jpg" style="width: 50px; height: 50px; border-radius: 50%; margin-top: -60px;"></p>
+  <p style="margin-top: -20px">SULEJA EMIRATE COUNCIL</p>
+</div>
+<!-- FOOTER START -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1 style="color: #ffffff">History of Suleja</h1>
+    <ul style="color: #ffffff">
+     Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" style="color: #ffffff">Read more:</a>
+    </ul>
+  </div>
+  <div class="col">
+    <h1 style="color: #ffffff">Sight and Sound</h1>
+    <ul>
+      <li><a href="http://www.kirs.gov.ng/" style="color: #ffffff">Durbar Pictures</a></li>
+      <li><a href="https://knupda.org/" style="color: #ffffff">Historic Pictures</a></li>
+      <li><a href="http://www.pcacckano.org.ng/" style="color: #ffffff">Cultural Group Pictures</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1 style="color: #ffffff">About Us</h1>
+    <ul>
+      <li><a href="https://www.kigra.gov.ng/" style="color: #ffffff">History of Suleja</a></li>
+      <li><a href="forms.html" style="color: #ffffff">Traditional Structure and Districs</a></li>
+      <li><a href="notice.html" style="color: #ffffff">Title Holders</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1 style="color: #ffffff">Events/Festival</h1>
+    <ul>
+      <li style="color: #ffffff">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+      
+    </ul>
+  </div>
+  <div class="col">
+    <h1 style="color: #ffffff">Support</h1>
+    <ul>
+      <li style="color: #ffffff">info@sulejaec.com.ng</li>
+      <li style="color: #ffffff">081000000</li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1 style="color: #ffffff">Social</h1>
+    <ul>
+      <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+      <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+      <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- END OF FOOTER -->
+
+
+<p align="center"><a href="http://www.hamujtechnology.com">Design by Hamuj Technology</a></p>
+</div>
+</body>
+</html>
