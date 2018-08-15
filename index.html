@@ -15,7 +15,7 @@ background-color: rgb(63, 63, 63);
 }
 
 h1 {
-color: green;
+color: rgb(255, 255, 255);
 text-align: center;
 text-transform: uppercase;
 }
@@ -28,7 +28,7 @@ animation: enterFromLeft 1.5s ease-out;
 }
 
 h1 span:first-letter {
-color: #0000FF;
+color: green;
 }
 
 @keyframes enterFromLeft {
@@ -145,13 +145,13 @@ html,body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, Sans-serif;
-  background-color: #0000FF;
+  background-color: green;
 }
 .dummy_page {
   height: 5px;
   width: 100%;
   color: #ffffff;
-  background-color: #0070a4;
+  background-color: lightgreen;
   text-align: center;
   box-sizing: border-box;
   padding: 60px 0px;
@@ -163,7 +163,7 @@ html,body {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: green;
+  background-color: darkgreen;
 }
 .footer .col {
   width: 190px;
@@ -259,6 +259,15 @@ html,body {
   }
 }
 
+@media only screen and (max-width: 400px) {
+
+.myimage{
+	margin-left: -30px;
+	width: 300px;
+}   
+
+}
+
 
 
 </style>
@@ -303,7 +312,7 @@ html,body {
         
 
         
-        
+        <li class="active"></li>
         <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search" size="20">
@@ -318,8 +327,8 @@ html,body {
 
        </ul>
        <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#" style="background: #48C9B0;"><span class="glyphicon glyphicon-user"></span> Mail</a></li>
-      <li class="active"><a href="#" style="background: #48C9B0;"><span class="glyphicon glyphicon-log-in" ></span>Admin</a></li>
+      <li class="active"><a href="#" style="background: green;"><span class="glyphicon glyphicon-user"></span> Mail</a></li>
+      <li class="active"><a href="#" style="background: green;"><span class="glyphicon glyphicon-log-in" ></span>Admin</a></li>
       
     </ul>
      </div>
@@ -372,7 +381,7 @@ html,body {
 <img class="pic" src="images/emir.jpg"  class="img-circle" alt="Cinque Terre">
 <img class="picbig w3-animate-fading" src="images/emir.jpg"  class="img-circle" alt="Cinque Terre"><p><strong>His Highness</strong><br>
 
-<button style="width: 200px; margin-top: 50px;" class="w3-button w3-red" onclick="document.getElementById('id01').style.display='block'">List of rulers</button> 
+<button style="width: 200px; margin-top: 50px;" class="w3-button w3-green" onclick="document.getElementById('id01').style.display='block'">List of rulers</button> 
 <div id="id01" class="w3-panel w3-green w3-display-container" style="display:none">
   <span onclick="this.parentElement.style.display='none'"
   class="w3-button w3-red w3-display-topright">x</span>
@@ -402,7 +411,7 @@ html,body {
   
   
 </div>
-  <p><button class="w3-button w3-red"><a href="#">Population</a></button></p>
+  <p><button class="w3-button w3-green"><a href="#">Population</a></button></p>
 
 </ol>
 <div id="mySidenav" class="sidenav">
@@ -446,12 +455,12 @@ function closeNav() {
 </div>
 <div class="col-md-3">
   <div class="font">
-  <img  src="images/1.jpg" style="border: 5px solid green">
-  <img  src="images/2.jpg" style="border: 5px solid green; margin-top: 10px;">
+  <img class="myimage"  src="images/1.jpg" style="border: 5px solid green">
+  <img class="myimage"  src="images/2.jpg" style="border: 5px solid green; margin-top: 10px;">
 
 
 
-<p style="margin-top: 10px;"><iframe width="330" height="150" src="https://www.youtube.com/embed/go7_lk0w5AQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></p></p>
+<p class="myimage" style="margin-top: 10px;"><iframe width="330" height="150" src="https://www.youtube.com/embed/go7_lk0w5AQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></p></p>
 
    
 <!-- BEGIN JIVOSITE CODE {literal} -->
